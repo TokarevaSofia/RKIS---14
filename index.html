@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Shop</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Sweet Shop</h1>
+
+        <p>Магазин вкусных сладостей</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Добро пожаловать!</h2>
+
+            <p>
+                Здесь ты найдёшь самые вкусные десерты,
+                торты и сладкие подарки.
+            </p>
+        </section>
+
+        <section>
+            <h2>Оформить заказ</h2>
+
+            <form id="order-form">
+
+                <label for="name">
+                    Ваше имя:
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Введите имя"
+                    required
+            >
+
+                <label for="product">
+                    Сладость:
+                </label>
+
+                <input
+                    type="text"
+                    id="product"
+                    placeholder="Например, Cheesecake"
+                    required
+            >
+
+                <label for="quantity">
+                    Количество:
+                </label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    min="1"
+                    value="1"
+                    required
+            >
+
+                <button type="submit">
+                    Оформить заказ
+                </button>
+
+            </form>
+
+            <pre id="result"></pre>
+
+        </section>
+
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
